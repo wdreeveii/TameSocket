@@ -64,7 +64,7 @@ var TameSocket = function(usrConfig) {
 	var resetSocket = function() {
 		if (resetTimeout == null) {
 			socket.close();
-			resetSocket = setTimeout(setupSocket, config.reconnectDelay);
+			resetTimeout = setTimeout(setupSocket, config.reconnectDelay);
 		}
 	}
 

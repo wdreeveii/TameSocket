@@ -30,11 +30,11 @@ var socket = TameSocket({
 	}
 });
 ```
-The result returned by TameSocket is the WebSocket object so you can interract with it the same way you interract with all WebSockets.
+The result returned by TameSocket is a normal WebSocket object so you can interract with it the same way you interract with all WebSockets.
 ###Available configuration options and defaults:
 | Option | Default | Description |
 |:-------|:-------:|:------------|
-| target | null | The address of the websocket you want to connect to. Required. |
+| target | null | The address of the WebSocket you want to connect to. Required. |
 | sleepTimeout | 60000 | The number of milliseconds a TameSocket should use to detect a sleep. |
 | reconnectDelay | 5000 | The number of milliseconds a TameSocket will wait before reconnecting to the WebSocket. |
 | msgMinInterval | 1000 | The number of milliseconds a TameSocket will buffer messages between calls to msgProcessor. |
